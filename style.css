@@ -1,0 +1,966 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: red;
+    --background: #121212;
+}
+
+body,
+html {
+    background: var(--background);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.day-night {
+    background: #fff;
+}
+
+#main {
+    position: relative;
+    /* min-height: 100vh;
+    height: 1600px; */
+    width: 100vw;
+
+}
+h1{
+    color: #d0cfcf;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.544);
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid #383838;
+    position: fixed;
+    width: 100vw;
+    z-index: 3000;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 1px, rgba(0, 0, 0, 0.19) 0px 4px 2px, rgba(0, 0, 0, 0.19) 0px 8px 4px, rgba(0, 0, 0, 0.19) 0px 16px 8px, rgba(0, 0, 0, 0.19) 0px 32px 16px;
+}
+@media (min-width: 760px) {
+    
+}
+a {
+    text-decoration: none;
+}
+
+.left a {
+    color: white;
+    font-family: "Baloo Bhai 2", sans-serif;
+    transition: all ease .1s;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+}
+
+.downside::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    border-radius: 5px;
+    bottom: 0;
+    transition: all .2s ease-in-out;
+    left: 50%;
+    top: 50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.downside:hover::before {
+    width: 100%;
+}
+
+.right a {
+    color: rgb(255, 255, 255);
+    font-family: "Baloo Bhai 2", sans-serif;
+    transition: all ease .2s;
+
+
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.logo {
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.logo:hover {
+    opacity: .8;
+    scale: 1.2;
+}
+
+.right img {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    transition: all ease .2s;
+
+
+}
+
+.bt {
+
+    font-family: "Baloo Bhai 2", sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    transition: all ease .2s;
+    border-radius: 8px;
+    background: rgb(0, 204, 255);
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+    font-size: clamp(14px, 4vw, 18px);
+
+}
+
+.footer {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    /* border: 2px solid #fff; */
+    margin: 0 auto;
+    height: 300px;
+    color: #fff;
+    position: absolute;
+    /* bottom: 0; */
+    /* background: red; */
+    width: 100%;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 85vw;
+    align-items: center;
+    gap: 10px;
+    padding: 55px 0;
+    /* border-top: 2px solid rgb(255, 255, 255) ; */
+    border-bottom: 1px solid rgba(19, 148, 177, 0.452);
+}
+
+.upper-footer button {
+    padding: 5px 30px;
+    border-radius: 5px;
+    background: beige;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.upper-footer button a:hover {
+    color: white;
+}
+
+.upper-footer button:hover {
+    background: rgb(0, 204, 255);
+}
+
+.upper-footer button a {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.lower-footer {
+    display: flex;
+    width: 90%;
+    margin: 60px 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    line-height: .9;
+}
+
+.footer-SocialMedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.copy-time {
+    color: #6b6a6a;
+}
+
+.trademarks {
+    color: #b8b4b4;
+
+}
+
+.footer-SocialMedia a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(14px, 4vw, 24px);
+    scale: 1.2;
+    /* background: red; */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    filter: invert(1);
+}
+
+.terms {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.terms a:hover {
+    text-decoration: 1px solid underline;
+}
+
+.footer img {
+    height: 70px;
+}
+
+.footer a {
+    font-family: "Baloo Bhai 2", sans-serif;
+    color: #fff;
+}
+
+.footer-SocialMedia a:hover {
+    background: red;
+}
+
+.btn {
+    font-family: "Baloo Bhai 2", sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    transition: all ease .2s;
+    border-radius: 8px;
+    background: black;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.See-all {
+    position: relative;
+}
+
+.btn img:hover {
+    filter: invert(0);
+    scale: 1.01;
+}
+
+.btn:hover {
+    scale: 1.01;
+    background: rgb(0, 204, 255);
+    opacity: 1;
+    color: #fff;
+}
+
+.center input {
+    padding: 10px 20px;
+    /* outline: none; */
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: 1px solid rgb(10, 181, 237);
+}
+
+.center button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    background: rgb(0, 200, 255);
+}
+
+.center button:hover {
+    opacity: .8;
+}
+
+.left a:hover {
+    opacity: .8;
+    scale: 1.1;
+}
+
+.right a:hover {
+    opacity: .8;
+    scale: 1.1;
+}
+
+.center button ion-icon {
+    scale: 1.5;
+    color: rgb(255, 255, 255);
+
+}
+
+#search {
+    scale: 1.5;
+    transition: all ease .2s;
+
+}
+
+#search:hover {
+    transform: scale(1.3);
+}
+
+
+.sider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: 0 auto;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 300px 48px rgba(146, 69, 158, 0.58);
+    -moz-box-shadow: 0px 0px 300px 48px rgba(146, 69, 158, 0.58);
+    box-shadow: 0px 0px 300px 48px rgba(146, 69, 158, 0.58);
+    background: transparent;
+    backdrop-filter: blur(90px);
+    border-radius: 20px;
+}
+
+.content img {
+    height: 700px;
+    width: 85vw;
+    border-radius: 10px;
+
+
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: 0 auto;
+    color: white;
+    font-family: "Baloo Bhai 2", sans-serif;
+    padding: 50px 0;
+}
+
+.features-right button {
+    background: rgba(255, 255, 255, 0.24);
+    color: #fff;
+    outline: none;
+    gap: 5px;
+    border: none;
+    border: 1px solid #000;
+    padding: 5px 40px;
+    border-radius: 50px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    backdrop-filter: blur(50px);
+    transition: all ease-in-out .2s;
+
+}
+
+.features-right button:hover {
+    opacity: .5;
+}
+
+#page-2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.left a {
+    font-size: clamp(14px, 4vw, 18px);
+}
+
+.right a {
+    font-size: clamp(14px, 4vw, 18px);
+}
+
+.gamecards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.gamecard-1 {
+    /* background: red; */
+    height: 400px;
+    width: 250px;
+    margin: 20px 0;
+    border-radius: 10px;
+    position: relative;
+    /* z-index: 1; */
+    overflow: hidden;
+    transition: all ease-in-out .2s;
+
+}
+
+.gamecard-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 0%);
+    height: calc(100% - 0%);
+    position: absolute;
+    cursor: pointer;
+}
+
+.lower-txt {
+    height: 300px;
+    width: 100%;
+    /* background: red; */
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    /* transform: translate(0 , -50px); */
+}
+
+#txt {
+
+    color: #fff;
+    position: absolute;
+    transition: all .2s ease-in;
+    font-family: "Roboto", sans-serif;
+    font-family: "Baloo Bhai 2", sans-serif;
+
+    line-height: 1.3;
+    /* bottom: 10px; */
+    /* left: 20px; */
+    cursor: pointer;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    text-align: center;
+    /* transform: translate(0 , 100px); */
+    border-image: fill 0.2 linear-gradient(rgba(78, 76, 76, 0.203), #000);
+}
+
+.gamecard-1-lower:hover {
+    border-image: fill 0.2 linear-gradient(#0001, #000);
+}
+
+.lower-txt {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.gamecard-1:hover {
+    scale: 1.05;
+}
+
+.socket {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20000;
+    pointer-events: none;
+}
+
+.load {
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100000;
+    transition: all .2s ease-in-out;
+    background: #000000dd;
+}
+
+.hex-brick {
+    background: #000000;
+    width: 32px;
+    height: 17px;
+    position: absolute;
+    top: 5px;
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.h2 {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+}
+
+.h3 {
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+}
+
+.gel {
+    height: 150px;
+    width: -200px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.center-gel {
+    margin-left: -15px;
+    margin-top: -15px;
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.c1 {
+    margin-left: -47px;
+    margin-top: -15px;
+}
+
+.c2 {
+    margin-left: -31px;
+    margin-top: -43px;
+}
+
+.c3 {
+    margin-left: 1px;
+    margin-top: -43px;
+}
+
+.c4 {
+    margin-left: 17px;
+    margin-top: -15px;
+}
+
+.c5 {
+    margin-left: -31px;
+    margin-top: 13px;
+}
+
+.c6 {
+    margin-left: 1px;
+    margin-top: 13px;
+}
+
+.c7 {
+    margin-left: -63px;
+    margin-top: -43px;
+}
+
+.c8 {
+    margin-left: 33px;
+    margin-top: -43px;
+}
+
+.c9 {
+    margin-left: -15px;
+    margin-top: 41px;
+}
+
+.c10 {
+    margin-left: -63px;
+    margin-top: 13px;
+}
+
+.c11 {
+    margin-left: 33px;
+    margin-top: 13px;
+}
+
+.c12 {
+    margin-left: -15px;
+    margin-top: -71px;
+}
+
+.c13 {
+    margin-left: -47px;
+    margin-top: -71px;
+}
+
+.c14 {
+    margin-left: 17px;
+    margin-top: -71px;
+}
+
+.c15 {
+    margin-left: -47px;
+    margin-top: 41px;
+}
+
+.c16 {
+    margin-left: 17px;
+    margin-top: 41px;
+}
+
+.c17 {
+    margin-left: -79px;
+    margin-top: -15px;
+}
+
+.c18 {
+    margin-left: 49px;
+    margin-top: -15px;
+}
+
+.c19 {
+    margin-left: -63px;
+    margin-top: -99px;
+}
+
+.c20 {
+    margin-left: 33px;
+    margin-top: -99px;
+}
+
+.c21 {
+    margin-left: 1px;
+    margin-top: -99px;
+}
+
+.c22 {
+    margin-left: -31px;
+    margin-top: -99px;
+}
+
+.c23 {
+    margin-left: -63px;
+    margin-top: 69px;
+}
+
+.c24 {
+    margin-left: 33px;
+    margin-top: 69px;
+}
+
+.c25 {
+    margin-left: 1px;
+    margin-top: 69px;
+}
+
+.c26 {
+    margin-left: -31px;
+    margin-top: 69px;
+}
+
+.c27 {
+    margin-left: -79px;
+    margin-top: -15px;
+}
+
+.c28 {
+    margin-left: -95px;
+    margin-top: -43px;
+}
+
+.c29 {
+    margin-left: -95px;
+    margin-top: 13px;
+}
+
+.c30 {
+    margin-left: 49px;
+    margin-top: 41px;
+}
+
+.c31 {
+    margin-left: -79px;
+    margin-top: -71px;
+}
+
+.c32 {
+    margin-left: -111px;
+    margin-top: -15px;
+}
+
+.c33 {
+    margin-left: 65px;
+    margin-top: -43px;
+}
+
+.c34 {
+    margin-left: 65px;
+    margin-top: 13px;
+}
+
+.c35 {
+    margin-left: -79px;
+    margin-top: 41px;
+}
+
+.c36 {
+    margin-left: 49px;
+    margin-top: -71px;
+}
+
+.c37 {
+    margin-left: 81px;
+    margin-top: -15px;
+}
+
+.r1 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .2s;
+}
+
+.r2 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .4s;
+}
+
+.r3 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .6s;
+}
+
+.r1>.hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .2s;
+}
+
+.r2>.hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .4s;
+}
+
+.r3>.hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .6s;
+}
+
+@keyframes pulse00 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0.01);
+        transform: scale(0.01);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes fade00 {
+    0% {
+        background: #767575;
+    }
+
+    50% {
+        background: #000000;
+    }
+
+    100% {
+        background: #353535;
+    }
+}
+
+.slide img.hide {
+    opacity: 0;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #000;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide img {
+    /* width: 100%; */
+    height: 700px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    position: relative;
+    /* object-fit: cover; */
+    /* background: red; */
+    transition: filter 0.3s ease-in-out;
+    /* filter:  saturate(1000000000000000000%) contrast(120%) ; */
+    filter: saturate(70%) brightness(100%) contrast(100%);
+
+    /* filter: grayscale(0); */
+
+
+
+}
+
+.slide:hover img {
+    cursor: pointer;
+    filter: saturate(120%) brightness(100%) contrast(120%);
+
+
+
+}
+
+.slide::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    border-radius: 10px;
+    transition: border 0.4s ease-in-out;
+    transition: border .4s ease-in-out;
+    border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0), #00000000);
+}
+
+
+
+
+
+
+
+
+
+

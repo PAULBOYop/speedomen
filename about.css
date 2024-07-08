@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.paage-1{
+    width: 100%;
+    position: relative;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paage-1 img{
+    /* position: ; */
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 600px;
+    background-position: center center;
+    background-size: contain;
+}
+.paage-1 p{
+    font-size: clamp(15px , 1vw , 100px);
+
+}
+.paage-1 h1{
+    font-family: "Anton", sans-serif;
+    font-size: clamp(30px , 4vw , 100px);
+    font-weight: 900;
+    /* -webkit-box-reflect: below; */
+}
+.paage-1 .paage-1-conts{
+    font-family: "Baloo Bhai 2", sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    height: 250px;
+    min-height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    gap: 10px;
+    margin-top: 100px;
+    overflow: hidden;
+    transition: border-image .2s ease-in-out;
+    box-shadow: rgb(0, 0, 0) 0px 14px 28px, rgba(0, 0, 0, 1.705) 0px 10px 10px;
+}
+.paage-2-conts iframe{
+    position: relative;
+    background: radial-gradient(transparent ,transparent ,#000000b3, #000000ed, #060606);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.25) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.21) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.26) 0px 2px 1px, rgba(0, 0, 0, 0.39) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.49) 0px 16px 8px, rgba(0, 0, 0, 0.39) 0px 32px 16px;
+    z-index: 3;
+
+}
+.paage-2-conts iframe::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-in-out;
+    z-index: 4;
+    backdrop-filter: blur(.5px);
+    background: radial-gradient(transparent ,transparent ,#000000b3, #000000ed, #060606);
+}
+.paage-2-conts{
+    height: 650px;
+    width: 85vw;
+    margin: 0 auto;
+}
+:root{
+    --backgroun: #121212;
+}
+.paage-2{
+    height: 950px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b54f4f;
+    background: var(--backgroun);
+    position: relative;
+}
+.paage-2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #012650;
+    backdrop-filter: blur(40px);
+    /* background: linear-gradient(to bottom , #012650 ,#001935de, transparent ,transparent); */
+    /* opacity: .5; */
+    box-shadow: 47px 8px 100px 150px black;
+}
+.gamecards{
+    margin: 30px auto;
+}
+.cards{
+    height: 400px;
+    min-width: 350px;
+    gap: 20px;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85vw;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.upper h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: "Anton", sans-serif;
+    
+
+}
+.upper p{
+    color: #fff;
+    font-family: "Baloo Bhai 2", sans-serif;
+
+}
+.paage-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 85vw;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #000;
+    /* overflow: hidden; */
+
+}
+.paage-4 .contos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    color: #fff;
+    border-radius: 100px;
+    left: 10%;
+    width: 50%;
+    z-index: 100;
+    border-radius: 10px;
+ 
+
+}
+.contos h1{
+    font-family: "Anton", sans-serif;
+    font-size: clamp(20px , 4vw , 50px);
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+
+}
+.contos p{
+    font-family: "Baloo Bhai 2", sans-serif;
+    text-align: start;
+    font-size: 1.1rem;
+}
+.contos button{
+    padding: 10px 50px;
+    background: rgb(38, 115, 203);
+    font-size: 1.2rem;
+    border: 1px solid skyblue;
+    outline: none;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.contos button:hover{
+    /* opacity: .5; */
+    background: rgb(2, 88, 188);
+    scale: 1.021;
+    border-radius: 5px;
+
+
+}
+.gamecards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: 40px auto;
+}
+.paage-4 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-position: center; */
+    background-size: contain;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.25) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.21) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.26) 0px 2px 1px, rgba(0, 0, 0, 0.39) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.49) 0px 16px 8px, rgba(0, 0, 0, 0.39) 0px 32px 16px;
+}
+.paage-4{
+    overflow: hidden;
+}
+.paage-4::before{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    content: "";
+    background: red;
+    border-image: fill 0 linear-gradient(45deg, #0001, #000 ,#000);
+    opacity: .6;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 10px;
+    transition: animation .2s ease-in-out;
+    scale: 2;
+}
+.paage-4:hover::before{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    content: "";
+    background: red;
+    border-image: fill 0 linear-gradient(45deg, #0001, #000 ,#000);
+    opacity: .6;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 10px;
+    animation: dance 4s linear infinite;
+    scale: 2;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateX(00px);
+    }
+    20%{
+        transform: translateX(200px);
+        filter: brightness(110%) contrast(200%);
+        
+    }
+    40%{
+        transform: translateX(0px);
+    }
+    60%{
+        transform: translateX(-200px);
+        filter: brightness(110%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.last{
+    width: 85vw;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.last h1{
+    font-family: "Anton", sans-serif;
+    font-size: clamp(20px , 4vw , 50px);
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    color: #d0cfcf;
+    text-shadow: 0 0 10px #000;
+}
+.icos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icos a:nth-child(1) ion-icon {
+    color: rgb(255, 128, 0);
+
+}
+.icos a:nth-child(2) ion-icon {
+    color: rgb(0, 136, 255);
+}
+.icos a:nth-child(3) ion-icon{
+    border-radius: 50%;
+
+}
+.icos a:nth-child(3) ion-icon {
+    color: #00b3ff;
+}
+.icos a:nth-child(4) ion-icon {
+    color: rgb(223, 18, 18);
+}
+.icos a:nth-child(1) ion-icon:hover {
+    scale: 1.2;
+    color: rgb(255, 128, 0);
+    opacity: .5;
+    
+}
+.icos a:nth-child(2) ion-icon:hover {
+    color: rgb(0, 136, 255);
+    opacity: .5;
+}
+.icos a:nth-child(3) ion-icon{
+    border-radius: 50%;
+    
+}
+.icos a:nth-child(3) ion-icon:hover {
+    color: #00b3ff;
+    opacity: .5;
+}
+.icos a:nth-child(4) ion-icon:hover {
+    color: rgb(223, 18, 18);
+    opacity: .5;
+}
+
+.last ion-icon:hover{
+    color: #878686;
+    scale: 1.2;
+}
+.last ion-icon{
+    color: #fff;
+    transition: all .3s ease-in-out;
+    font-size: 2.5rem;
+}

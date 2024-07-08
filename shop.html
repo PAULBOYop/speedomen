@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="support.css">
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="shop.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="logo1.png" type="image/x-icon">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/spiral.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="contents">
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <a href="home.html"><img src="logo1.png" alt="logo"></a>
+                </div>
+                <a class="downside" href="games.html">Games</a>
+                <a class="downside" href="devices.html">Devices</a>
+                <a class="downside" href="support.html">Support</a>
+            </div>
+            <div class="center">
+                <input id="text" type="text" placeholder="Search games...">
+                <button id="sear" onclick="speak()"><ion-icon id="search" name="search"></ion-icon></button>
+            </div>
+            <div class="right">
+                <a class="downside" href="about.html">ABOUT</a>
+                <a style="text-decoration: 3px underline; -webkit-text-stroke: 1px;" class="downside" href="#">SHOP</a>
+                <a class="downside" href="index.html">ACCOUNT</a>
+                <button class="btn">
+                    <img src="logo1.png" alt="logo">
+                    <a href="#">Download speeDomen</a></button>
+            </div>
+        </nav>
+        <div class="page-1">
+            <div class="features">
+                <div class="features-left">
+                    <br>
+                    <h2 style="font-size: 4rem; font-family: 'Anton', sans-serif; font-weight: 900; width: 100%; text-align: center;">All Games</h2>
+                    <br>
+                    <h1>Recommended Games</h1>
+                </div>
+
+            </div>
+            <div class="gamecards">
+                <div class="cards">
+                    <img src="https://imgs.search.brave.com/dc-gWQDruIJjDXRL9H4BhZ4fSweGESr1r7sKXZTnEQU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmdhbWVyYW50/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMDkv/Y3liZXJwdW5rLTIw/NzctcG9zdGVyLmpw/Zw"
+                        alt="">
+                    <div class="cards-text">
+                        <p>CyberPunk - 2050</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £50.99</b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.54833.67312949670211111.e02ca682-7627-49bb-a230-6f831f2e93d2.ba364000-a28e-4117-b936-c0d1b77af8a5?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>Brothers -</p>
+                        <span>Available on (<b style="color: rgb(60, 255, 0); font-size: 1.01rem;"> Play For free
+                            </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.59470.13866193465225289.db7b419b-65e7-47c5-af55-57e11e7c9099.ad8ff462-793b-4990-b0e1-b78ecd5413ee?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>The lord of the night</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £50.99</b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.59123.14445715000850412.83840d24-19b4-4894-8f10-770047ae8042.21f86d6d-af61-44ea-b1f6-23502551d438?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>Cricket 22</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1rem;"> From £34.99 </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.10245.13664067683563799.d0411d79-7aa8-4c1b-89d0-bee76d4b142d.279d8291-b1b6-44bc-a68d-3283c55c27c0"
+                        alt="">
+                    <div class="cards-text">
+                        <p>GTA - Online</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £40 </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30063.13589262686196899.16e3418a-cbf2-4748-9724-1c9dc9b7a0b9.672da915-9117-4230-960d-4f59f3d7beb5?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>Among Us</p>
+                        <span>Available on (<b style="color: rgb(60, 255, 0); font-size: 1.01rem;"> Play For free
+                            </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.11905.14112953128044526.ba95d4f9-17d4-4076-a135-073ccafc4d57.99774603-a61d-41bd-a87d-75435610d053?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>The Bunker</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £44.44 </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.24623.13714596773589453.b0e22fc5-f8b4-4b36-b12d-db5d42554c10.6f0900bc-34c9-486d-996b-89c8de1cc280?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>High On Life</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1rem;"> From £34.99 </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.34695.13942869738016799.078aba97-2f28-440f-97b6-b852e1af307a.b278e12f-c22c-4a2a-bb18-dfd26ca6cafc"
+                        alt="">
+                    <div class="cards-text">
+                        <p>Red Redemption Dead-II</p>
+                        <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £67.89 </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="https://store-images.s-microsoft.com/image/apps.37983.13537753407138520.dff5c24f-cbc4-4966-945c-efeedb6f07f6.013162f0-4174-4145-8d71-55f21c1414e4?w=280"
+                        alt="">
+                    <div class="cards-text">
+                        <p>Rune Factory Special</p>
+                        <span>Available on (<b style="color: rgb(60, 255, 0); font-size: 1.01rem;"> Play For free
+                            </b>)</span>
+                        <div class="playstations">
+                            <ion-icon name="logo-xbox"></ion-icon>
+                            <ion-icon name="logo-google-playstore"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </div>
+                        <div class="playbtn">
+                            <ion-icon class="play" name="play"></ion-icon>
+                            <p>Play Game</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="page-1">
+                <div class="features">
+                    <div class="features-left">
+                        <h1>Most Gifted</h1>
+                    </div>
+                    <div class="gamecards">
+
+                        <div class="cards">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd5baa2f3baef945d/621d51fc04503350d255bb74/Family_Page_Browsing_Card_Desktop_Mobile_960x540.png?imwidth=332&imdensity=1.25"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Diablo Immortal</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £34.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt3f9549c05ee33f13/612559d5485f90297b7dea39/14300-45310.png?imwidth=332&imdensity=1.25"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Warcraft® III: Reforged</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;">From £24.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltbe1582ef1691da64/653ad22f23ad6fdfc530381c/WoW_11.0_PreSaleSupportAssets_Bnet_CheckoutThumbnail_960x540_B06.png?imwidth=332&imdensity=1.25"
+                                alt="">
+                            <div class="cards-text">
+                                <p>The War Within™</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £38.90
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5a3d84e1d0b2bbcf/662aea9f842cecfd4fd95327/HS_Key_Art_SG2.png?imwidth=332&imdensity=1.25"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Hearthstone®</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 30); font-size: 1.01rem;"> Play For free</b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt825dc158da3cd435/63619505791b1444d8d1d39a/CODWZ2_S1-Bnet_Game-Product_Browsing_Card-960x540.jpg?imwidth=332&imdensity=1.25"
+                            alt="">
+                            <div class="cards-text">
+                                <p>Call of Duty®: Warzone</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £14.57
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4197fb75a1d70653/636d8db2cd229e3bb8dd582c/2022_09_Diablo_D4_Shop_Product_Asset_Base_1920x1080_TS01.png?imwidth=332&imdensity=1.25"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Diablo®IV-Edition</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £14.57
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.25322.14537704372270848.6ecb6038-5426-409a-8660-158d1eb64fb0.d230176a-d7a2-4696-ad23-ff53a6e004df"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Elden Ring</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £44.57
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.53095.13850085746326678.06e2dc5c-7997-46e9-a8e6-0e48b57cb13b.419e3c9d-9dd3-4a28-a9f3-a12350215871"
+                            alt="">
+                            <div class="cards-text">
+                                <p>MineCraft®</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 30); font-size: 1.01rem;"> Play For free</b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.20372.70222240565100850.b7bb7fed-111f-4c72-b8c3-85a647cdf303.f73d078b-e1dd-4441-9974-f2cce492dfe4"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Killing Floor 2</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £29.57
+                                </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.9688.70804610839547354.8da93c46-fd13-4b16-8ebe-e8e02c53d93e.09c2e91e-28bd-4f6f-bfd6-79d6b241667a"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Mortal Kombat 11</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £19.69
+                                </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="features-right">
+                <button class="features-right-btn1">PC</button>
+                <button class="features-right-btn2">Console</button>
+                <button class="features-right-btn3">Mobile</button>
+            </div> -->
+
+                </div>
+            </div>
+            <div class="page-1">
+                <div class="features">
+                    <div class="features-left">
+                        <h1>Featured Games</h1>
+                    </div>
+                    <div class="gamecards">
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.31980.14105414348544973.9bef7109-ae4f-4d2d-840a-a27f3acfe32a.0af8317c-0b58-401a-9cf5-dad0fd8fed52?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Robin Hood</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £34.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.14248.14099938228729765.8d5a9e65-d0cf-4c5b-9131-eaba39ee8b29.784331df-3116-4ad4-8658-0998e86f2d81?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Sandrock Online</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;">From £24.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.52353.65316930463474702.8bd81916-34f9-4e21-9716-b1f55adb797a.85394748-695a-4460-85d6-046309b7449d?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>SteamWorld Dig</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £38.90
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.56102.14049385901429569.7e7c59ac-85c6-43f6-8148-3aad230895b3.628604b0-3f2d-49ad-9b28-3050c6bcc7ff?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Still Wakes the Deep</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 30); font-size: 1.01rem;"> Play For free</b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.30144.14059948614171780.9cc4eb83-d9f3-4756-9b6c-b04da030506d.d89b29b0-b804-48bb-81a5-843fbb562b6f?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>TOEM</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 30); font-size: 1.01rem;"> Play For free</b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-1">
+                <div class="features">
+                    <div class="features-left">
+                        <h1>Trending One</h1>
+                    </div>
+                    <div class="gamecards">
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.4956.13558336166432541.beb57fbe-cc4b-40c5-ba76-c8112867dea2.43b4dea4-61a1-4ffc-81ab-62cf72323363?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>A Plague Tale: Requiem</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £34.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.47381.14545480955348978.f72b621c-2a7f-403c-8bd4-126f7310ad33.c2cc3983-f689-401d-9deb-e46cb33271be?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>ARK:Survival AScended</p>
+                                <span>Available on (<b style="color: rgb(21, 255, 0); font-size: 1.01rem;"> Play for Free
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.27917.13534188749393159.6bee1793-dd42-4c8a-952d-a59bcfe8fcbd.6aa4455e-043f-4e93-8fec-036e6d12d00d?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Hauntii</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;">£38.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.37469.13934868189109496.4e054641-0d1c-44ce-b9de-ab31cfe8ce52.ed9897e7-b725-4c18-aed4-a934e5dd3495?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Lords Of the Fallen</p>
+                                <span>Available on (<b style="color: rgb(21, 255, 0); font-size: 1.01rem;"> Play for Free
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.29572.14301289549560004.21a931ed-1596-4a2b-8642-73be42254d40.7beda2e8-b7df-4758-8e87-9052559824a2?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>ARK:Survival AScended</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £54.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.5300.13983388788981788.5759616d-049c-4b54-a637-68a2535843a1.a2450697-e8fa-4262-8b26-c7dd3ffa15e5"
+                                alt="">
+                            <div class="cards-text">
+                                <p>S.T.A.L.K.E.R</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £5.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.33103.13572322600772428.1aa7f1f5-8867-4cf5-aa22-55ecea3327ee.ae16adf3-94b0-4740-91ef-f768a04aba08"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Tom Clancy's</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £54.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.62646.13662153058855583.d07f97b6-b2ec-4a4c-9bce-a92d676f427c.40fb6d93-d1eb-4f9d-a715-58ac114134fa?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>A short Hike</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;">  £8.99
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.34339.13957312526507243.94fe35e3-4bb7-4224-8eee-d723937ca03f.0609ad3e-d7ef-46af-a855-d5fc5211c954?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Arcade Paradise</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> From £24.69
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.53668.13787553970953610.efdae53f-3dda-407f-a5a1-c31a28f45dc1.279ab5de-fcdc-4402-a657-28c380b5a33a?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Isonzo (Windows)</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 4); font-size: 1.01rem;"> Play for Free
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.6445.14003683450151848.989e0309-a16d-4d26-ab43-270bfe74767b.014f4760-2df5-4e2b-9dd2-1c51632e0cb8?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Depersonalization</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 4); font-size: 1.01rem;"> Play for Free
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.56194.14472076620486851.de69fabd-13ef-44c4-93cd-42994bfae375.7d52081c-52a2-47fe-9a87-98d93a376c42?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Figment 2: Creed Valley</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £36.69
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.56868.14490665772853953.a70de13a-b9d0-41e7-bac1-9ce697912658.b2a308a9-d7a0-4dfd-a1d8-a38bcef5b290?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Anuchard</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 4); font-size: 1.01rem;"> Play for Free
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://store-images.s-microsoft.com/image/apps.47868.13709503452579203.2424d951-5f62-4cd0-816f-1d45c87c1dc3.66574724-828d-487e-8e65-165c5cc1eb6b?w=280"
+                                alt="">
+                            <div class="cards-text">
+                                <p>A little to the left</p>
+                                <span>Available on (<b style="color: rgb(255, 0, 0); font-size: 1.01rem;"> £16.49 
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="https://assets.xboxservices.com/assets/e2/85/e285ef93-0802-42f2-8f19-ba351d2f024d.jpg?n=7021517_Large-tout-0_1083x1222_01.jpg"
+                                alt="">
+                            <div class="cards-text">
+                                <p>Destiny 2: The Final Shape</p>
+                                <span>Available on (<b style="color: rgb(0, 255, 4); font-size: 1.01rem;"> From £45.89
+                                    </b>)</span>
+                                <div class="playstations">
+                                    <ion-icon name="logo-xbox"></ion-icon>
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                </div>
+                                <div class="playbtn">
+                                    <ion-icon class="play" name="play"></ion-icon>
+                                    <p>Play Game</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="page-2">
+                        <div class="con">
+                            <img src="https://assets.xboxservices.com/assets/dc/cd/dccd44ce-7452-41f7-ad56-4a4abbdac8f7.jpg?n=Game-Hub_Content-Placement-0_Optimized_788x444_02.jpg" alt="">
+                            <div class="page-2-contents">
+                                <h1>Dive into Adventure</h1>
+                                <p>Download speeDomen and join millions of community</p>
+                                <a href="">
+                                    <button class="downloads"><ion-icon name="logo-windows"></ion-icon> Download For Windows</button>
+                                </a> 
+                                    <a href=""><button class="learn">Learn More</button></a>
+                            </div>
+                        </div>
+                    </div>
+            
+</body>
+<div class="footer">
+    <div class="upper-footer">
+        <button><a href="#">Careers</a></button>
+        <button><a href="about.html">About</a></button>
+        <button><a href="contact.html">Contact Us</a></button>
+        <button><a href="#">Site Map</a></button>
+    </div>
+    <div class="lower-footer">
+        <div class="footer-logo">
+            <img src="logo1.png" alt="">
+            <div class="footer-CopyRight">
+                <div class="copy-time">&copy; 2024 speeDomen Entertainment, Inc.</div>
+                <div class="trademarks">All trademarks referenced herein are the properties of their respective
+                    owners.</div>
+                <div class="terms">
+                    <a href="#">Privacy</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-SocialMedia">
+            <a href="https://www.instagram.com/b_s_nt__/"><box-icon name='instagram-alt' type='logo'></box-icon></a>
+            <a href="https://www.twitter.com/"><box-icon type='logo' name='twitter'></box-icon></a>
+            <a href="https://www.facebook.com/profile.php?id=100050948953230"><box-icon name='facebook-circle'
+                    type='logo'></box-icon></a>
+            <a href="https://www.youtube.com/channel/UCpydaJxp6kygWzoSFn17SNA"><box-icon name='youtube'
+                    type='logo'></box-icon></a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script type="text/javascript" src="path/to/@stefano-rainieri/yajs/dist/main.[esm|umd].bundle.js"></script>
+
+</html>
